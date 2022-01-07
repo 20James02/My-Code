@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://anhdep123.com/wp-content/uploads/2020/05/hinh-nen-trang-hoa-van-dep.jpg);
+}
+.navBar {
+    background-color: #fff;
+    width: 200px;
+    height: auto;
+    padding: 50px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    float: left;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 35%;
+}
+.menu {
+    padding:15px;
+    display: flex;
+    align-items: center;
+    color: red;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.menu.active {
+    background-color: black;
+}
+.menu span {
+    margin-left: 10px;
+}

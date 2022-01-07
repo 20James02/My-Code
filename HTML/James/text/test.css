@@ -1,0 +1,16 @@
+body {
+	font-family: arial;
+	color: rgb(21, 87, 4);
+}
+p {
+	color: rgb(230, 81, 94);
+}
+.content {
+	font-size: 30px;
+	margin: 10px 20px;
+}
+.box {
+	background-image: 20px;
+	background-size: 20px;
+	border: rgb(105, 228, 74, 0.5);
+}
