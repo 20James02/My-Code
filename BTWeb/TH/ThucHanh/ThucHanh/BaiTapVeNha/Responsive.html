@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta viewport="width=device-width; initial-scale=1">
+	<style>
+		[class*="col-"]{
+			float: left;
+			padding: 15px;
+			border: 1px solid red;
+			width: 100%;
+		}
+		.row::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.header, .footer{
+			background-color: #68A8C0;	
+			padding: 15px;
+			text-align: center;
+		}
+		
+		@media only screen and (min-width: 768px) {
+			.col-m-1{width: 8.33%;}
+			.col-m-2{width: 16.67%;}
+			.col-m-3{width: 25%;}
+			.col-m-4{width: 33.33%;}
+			.col-m-5{width: 41.67%;}
+			.col-m-6{width: 50%;}
+			.col-m-7{width: 58.33%;}
+			.col-m-8{width: 66.67%;}
+			.col-m-9{width: 75%;}
+			.col-m-10{width: 83.33%;}
+			.col-m-11{width: 91.67%;}
+			.col-m-12{width: 100%;}	
+		}
+		
+		@media only screen and (min-width: 992px) {
+			
+			.col-1{width: 8.33%;}
+			.col-2{width: 16.67%;}
+			.col-3{width: 25%;}
+			.col-4{width: 33.33%;}
+			.col-5{width: 41.67%;}
+			.col-6{width: 50%;}
+			.col-7{width: 58.33%;}
+			.col-8{width: 66.67%;}
+			.col-9{width: 75%;}
+			.col-10{width: 83.33%;}
+			.col-11{width: 91.67%;}
+			.col-12{width: 100%;}
+		}
+		.nav ul{
+
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+		.nav ul li{
+			background-color: #7AA4C1;
+			margin-bottom: 5px;
+		}
+		.nav li a{
+			line-height: 30px;
+			text-decoration: none;
+			color: #EA8585;
+			display: block;
+		}
+		.nav li a:hover{
+			background-color: #5F61C8;
+		}
+		.cityimg img{
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>The Header</h1>
+	</div>
+	<div class="row">
+		<div class="nav col-3 col-m-5">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Download</a></li>
+				<li><a href="#">Product</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="main col-9 col-m-7">
+			<h1>The city</h1>
+			<div class="cityimg"><img src="images/bridge.jpg" alt=""></div>
+			<p>Several pseudo-elements can also be combined. In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color:</p>
+
+		</div>
+	</div>
+	<div class="footer">
+		<h3>The Footer</h3>
+	</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap demo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	
+	<style>
+		.jumbotron{
+			background-color: #C0B5F7;
+			margin-bottom: 0;
+		}
+		.header{
+			color: #5A0606;
+		}
+		.navbar{
+			border-radius: 0;
+			margin-bottom: 0;
+		}
+		.vernav{
+			background-color: #225B48;	
+		}
+		.vernav div{
+			background-color: #225B48;	
+			border: none;
+		}
+		.vernav ul{
+			float: none;
+		}
+		.vernav li{
+			float: none;
+		}
+		.container{
+			background-color: #E1C5C5;
+		}
+		.panel-body img{
+			max-height: 87px;
+		}
+
+		.img-responsive{
+			width: auto;
+			height: 100%;
+		}
+		
+		.item img{
+			width: 100%;
+			max-height: 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header jumbotron text-center text-capitalize">
+		<h1>Shop online</h1>
+		<p>Shopping every time every where</p>
+	</div>
+	<div class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand">ShopOnline</div>
+			</div>
+
+			<div class="collapse navbar-collapse" id="mynav">
+				<ul class="nav navbar-nav">
+					<li><a href="">Home</a></li>
+					<li><a href="">Product</a></li>
+					<li><a href="" class="dropdown-toggle" data-toggle="dropdown">Download <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="">Windows</a></li>
+							<li><a href="">Linux</a></li>
+							<li><a href="">MacOS</a></li>
+						</ul>
+					</li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Help</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=""><span class="glyphicon glyphicon-user"></span> Your account</a></li>
+					<li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="vernav col-sm-3 col-xs-5">
+				<div class="navbar navbar-inverse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Samsung</a></li>
+						<li><a href="#">LG</a></li>
+						<li><a href="#">Lenouvo</a>	</li>
+						<li><a href="#">Sony</a></li>
+						<li><a href="#">Hp</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="main col-sm-9 col-xs-7">
+				
+				
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="images/img_1.jpg" alt="Los Angeles">
+						</div>
+
+						<div class="item">
+							<img src="images/img_2.jpg" alt="Chicago">
+						</div>
+
+						<div class="item">
+							<img src="images/img_3.jpg" alt="New York">
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+					<li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+					<li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+						<h3>HOME</h3>
+						<p>Some content.</p>
+					</div>
+					<div id="menu1" class="tab-pane fade">
+						<h3>Menu 1</h3>
+						<p>Some content in menu 1.</p>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+						<h3>Menu 2</h3>
+						<p>Some content in menu 2.</p>
+					</div>
+				</div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<td>Col1</td>
+							<td>Col2</td>
+							<td>Col3</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Val1</td>
+							<td>Val2</td>
+							<td>Val3</td>
+						</tr>
+						<tr>
+							<td>Val1</td>
+							<td>Val2</td>
+							<td>Val3</td>
+						</tr>
+						<tr>
+							<td>Val1</td>
+							<td>Val2</td>
+							<td>Val3</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p2.gif" alt=""></div>
+						<div class="panel-footer">$50</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p4.gif" alt=""></div>
+						<div class="panel-footer">$60</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p5.gif" alt=""></div>
+						<div class="panel-footer">$50</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p2.gif" alt=""></div>
+						<div class="panel-footer">$50</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p4.gif" alt=""></div>
+						<div class="panel-footer">$60</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p5.gif" alt=""></div>
+						<div class="panel-footer">$50</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p2.gif" alt=""></div>
+						<div class="panel-footer">$60</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Product</div>
+						<div class="panel-body"><img class="img-responsive" src="images/p5.gif" alt=""></div>
+						<div class="panel-footer">$50</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

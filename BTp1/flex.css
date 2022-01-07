@@ -1,0 +1,34 @@
+body {
+        box-sizing: border-box;    
+} 
+
+.container {
+        margin-top: 24px;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+         flex-wrap: wrap;
+}
+
+.common {
+        padding: 0 16px;
+        margin-top: 12px;
+        border-radius: 15px;
+        flex-basis: 20%;
+       
+}
+
+.hml {
+        background-color: rgb(105, 197, 201);
+}
+
+.cs {
+        background-color: rgb(228, 80, 109);
+        flex-basis: 40%;
+
+}
+
+.flb {
+        background-color: rgb(71, 212, 71);
+
+}

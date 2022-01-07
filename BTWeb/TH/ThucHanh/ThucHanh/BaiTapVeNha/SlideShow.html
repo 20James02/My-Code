@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide show</title>
+	<style>
+	
+	.slider-bar{
+		width: 680px;
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+	}
+	.slider{
+		height: 320px;
+	}
+	.slider ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.slider li{
+		line-height: 0;
+		position: relative;
+	}
+	.img1{
+		animation: oneani 20s linear infinite;
+	}
+	.img2{
+		top: -320px;
+		animation: twoani 20s linear infinite;
+	}
+	.img3{
+		top: -640px;
+		animation: threeani 20s linear infinite;
+	}
+	.img4{
+		top: -960px;
+		animation: fourani 20s linear infinite;
+	}
+	.img5{
+		top: -1280px;
+		animation: fiveani 20s linear infinite;
+	}
+	@keyframes oneani{
+		0%{left: -680px; z-index: 0; opacity: 0;}
+		75%{left: -680px; z-index: 0; opacity: 0;}
+		76%{left: -680px; z-index: 1; opacity: 1;}
+		80%{left: 0px; z-index: 1; opacity: 1;}
+		96%{left: 0px; z-index: 1; opacity: 1;}
+		100%{left: 680px; z-index: 1; opacity: 1;}
+	}
+	@keyframes twoani{
+		0%{left: -680px; z-index: 0; opacity: 0;}
+		55%{left: -680px; z-index: 0; opacity: 0;}
+		56%{left: -680px; z-index: 1; opacity: 1;}
+		60%{left: 0px; z-index: 1; opacity: 1;}
+		76%{left: 0px; z-index: 1; opacity: 1;}
+		80%{left: 680px; z-index: 1; opacity: 1;}
+		81%{left: 680px; z-index: 0; opacity: 0;}
+		82%{left: -680px; z-index: 0; opacity: 0;}
+		100%{left: -680px; z-index: 0; opacity: 0;}
+	}
+	@keyframes threeani{
+		0%{left: -680px; z-index: 0; opacity: 0;}
+		35%{left: -680px; z-index: 0; opacity: 0;}
+		36%{left: -680px; z-index: 1; opacity: 1;}
+		40%{left: 0px; z-index: 1; opacity: 1;}
+		56%{left: 0px; z-index: 1; opacity: 1;}
+		60%{left: 680px; z-index: 1; opacity: 1;}
+		61%{left: 680px; z-index: 0; opacity: 0;}
+		62%{left: -680px; z-index: 0; opacity: 0;}
+		100%{left: -680px; z-index: 0; opacity: 0;}
+	}
+	@keyframes fourani{
+		0%{left: -680px; z-index: 0; opacity: 0;}
+		15%{left: -680px; z-index: 0; opacity: 0;}
+		16%{left: -680px; z-index: 1; opacity: 1;}
+		20%{left: 0px; z-index: 1; opacity: 1;}
+		36%{left: 0px; z-index: 1; opacity: 1;}
+		40%{left: 680px; z-index: 1; opacity: 1;}
+		41%{left: 680px; z-index: 0; opacity: 0;}
+		42%{left: -680px; z-index: 0; opacity: 0;}
+		100%{left: -680px; z-index: 0; opacity: 0;}
+	}
+	@keyframes fiveani{
+		0%{left: 0; z-index: 1; opacity: 1;}
+		16%{left: 0; z-index: 1; opacity: 1;}
+		20%{left: 680px; z-index: 1; opacity: 1;}
+		21%{left: 680px; z-index: 0; opacity: 0;}
+		22%{left: -680px; z-index: 0; opacity: 0;}
+		95%{left: -680px; z-index: 0; opacity: 0;}
+		96%{left: -680px; z-index: 1; opacity: 1;}
+		100%{left: 0px; z-index: 1; opacity: 1;}
+	}
+	.progress-bar{
+		position: relative;
+		background-color: red;	
+		width: 680px;
+		top: -5px;
+		height: 5px;
+		padding: 0px;
+		z-index: 2;
+		animation: progress 20s ease-out infinite;
+	}
+	@keyframes progress{
+		0%, 20%, 40%, 60%, 80%{width: 0%; opacity: 0;}
+		4%, 24%, 44%, 64%, 84%{width: 0%; opacity: 0.7;}
+		16%, 36%, 56%, 76%, 96%{width: 100%;opacity: 0.7;}
+		19%, 39%, 59%, 79%, 99%{width: 100%; opacity: 0;}
+	}
+	</style>
+</head>
+<body>
+	<div class="slider-bar">
+		<div class="slider">
+			<ul>
+				<li class="img1"><img src="images/img_1.jpg" alt=""></li>
+				<li class="img2"><img src="images/img_2.jpg" alt=""></li>
+				<li class="img3"><img src="images/img_3.jpg" alt=""></li>
+				<li class="img4"><img src="images/img_4.jpg" alt=""></li>
+				<li class="img5"><img src="images/img_5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="progress-bar"></div>
+	</div>
+	
+</body>
+</html>

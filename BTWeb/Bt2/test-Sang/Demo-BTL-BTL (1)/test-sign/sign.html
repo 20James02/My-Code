@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="tenten.js"></script>
+</head>
+<body>
+    <button id="button1" style="width:100px;">Sign In</button>
+
+    <div id="id01" class="sign_form">
+
+    <form class="sign-content" action="/action_page.php">
+        <h1>Sign In</h1>
+        <div class="sign">
+        <hr>
+        <label for="user"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <div class="clearfix">
+            <button type="submit" class="signbutton">Sign In</button>
+        </div>
+        </div>
+        <p id="attachment"> New member? <a style="color: dodgerblue;" onclick="document.getElementById('id01').style.display='none',document.getElementById('id02').style.display='block'">Register here</a></p>
+    </form>
+    </div>
+
+    <button id="button2" style="width:100px;">Sign Up</button>
+
+    <div id="id02" class="sign_form">
+
+    <form class="sign-content" action="/action_page.php" method="post">
+        
+        <h1>Sign Up</h1>
+        <div class="sign">
+        <label for="user"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="email" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+        <div class="clearfix">
+            <button type="submit" class="signbutton">Sign Up</button>
+        </div>
+        <br>
+        <p>By creating an account you agree to our <a href="/Tenten/terms_of_use/" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        </div>
+        <p id="attachment">Already have an account ? <a id="button1" style="color: dodgerblue;" onclick="document.getElementById('id02').style.display='none',document.getElementById('id01').style.display='block'">Sign In</a></p>
+    </form>
+    </div>
+</body>
+</html>

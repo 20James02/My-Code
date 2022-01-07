@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/viewdeskop.css">
+    <link rel="stylesheet" href="./css/viewipad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://animetvn.com/images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <title>TenTen shop</title>
+</head>
+<body>
+<!--Navigation Bar-->
+    <div class="navBar">
+        <div class="wrapper">
+            <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-blockquote-right" viewBox="0 0 16 16">
+                <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm10.113-5.373a6.59 6.59 0 0 0-.445-.275l.21-.352c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.326-.182.569-.182h.281a1.686 1.686 0 0 0-.123-.498 1.379 1.379 0 0 0-.252-.37 1.94 1.94 0 0 0-.346-.298zm-2.168 0A6.59 6.59 0 0 0 10 6.352L10.21 6c.122.074.272.17.452.287.18.117.35.26.51.428.156.164.289.351.398.562.11.207.164.438.164.692 0 .36-.072.65-.216.873-.145.219-.385.328-.721.328-.215 0-.383-.07-.504-.211a.697.697 0 0 1-.188-.463c0-.23.07-.404.211-.521.137-.121.327-.182.569-.182h.281a1.749 1.749 0 0 0-.117-.492 1.402 1.402 0 0 0-.258-.375 1.94 1.94 0 0 0-.346-.3z"/>
+            </svg></label>
+            <div class="content">
+            <div class="logo"><a href="#">TenTen</a></div>
+                <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#" class="desktop-link">Trang Phục</a>
+                    <input type="checkbox" id="show-features">
+                    <label for="show-features">Trang Phục</label>
+                    <ul>
+                    <li><a href="#">Áo Khoác</a></li>
+                    <li><a href="#">Áo thun</a></li>
+                    <li><a href="#">Quần dài</a></li>
+                    <li><a href="#">Quần short</a></li>
+                    <li><a href="#">Boot</a></li>
+                    <li><a href="#">Sneacker</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="desktop-link">Đăng kí/Đăng nhập</a>
+                    <input type="checkbox" id="show-services">
+                    <label for="show-services">Đăng kí/Đăng nhập</label>
+                    <ul>
+                    <li><a href="#">Đăng Kí</a></li>
+                    <li><a href="#">Đăng Nhập</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                    <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z"/>
+                </svg>
+                    Giỏ Hàng
+                </a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+            </form>
+            </nav>
+        </div>
+    </div>
+<!--Content-->
+    <div class="box-sale">
+        <div class="list">
+            <div class="name-list">
+                <h2>Jacket</h2>
+            </div>
+            <div class="sale-items">              
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+                <div class="items">
+                    <a href="./product.html" class="items-img">
+                        <img src="./Photo/jacket/sp2.jpg" >
+                    </a>
+                    <div class="items-content">
+                        <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                        <div class="items-cost">
+                            <span class="line-through">1.550.000 &#8363</span><br>
+                            <span>869.000 &#8363;</span> 
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="items-button1">Add to card</button>
+                        <button>Order</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list accesor">
+        <div class="name-list">
+            <h2>Gợi ý</h2>
+        </div>
+        <div class="sale-items">
+            <div class="items">
+                <div class="items-img">
+                    <img src="./Photo/jacket/sp1.jpeg" >
+                </div>
+                <div class="items-content">
+                    <a href="#" class="items-title name-pro">Jacket MLB Varsity</a>
+                    <div class="items-cost">
+                        <span class="line-through">1.600.000 &#8363</span><br>
+                        <span>899.000 &#8363;</span> 
+                    </div>        
+                </div>
+                <div class="items-button">
+                    <button class="items-button1">Add to card</button>
+                    <button>Order</button>
+                </div>    
+            </div>
+            <div class="items">
+                <div class="items-img">
+                    <img src="./Photo/jacket/sp2.jpg" >
+                </div>
+                <div class="items-content">
+                    <a href="#" class="items-title name-pro">Jacket MLB Yellow</a>
+                    <div class="items-cost">
+                        <span class="line-through">1.550.000 &#8363</span><br>
+                        <span>869.000 &#8363;</span> 
+                    </div>
+                </div>
+                <div class="items-button">
+                    <button class="items-button1">Add to card</button>
+                    <button>Order</button>
+                </div>    
+            </div>
+            <div class="items">
+                <div class="items-img">
+                    <img src="./Photo/jacket/sp3.jpg" >
+                </div>
+                <div class="items-content">
+                    <a href="#" class="items-title name-pro">Jacket MLB Wool</a>
+                    <div class="items-cost">
+                        <span class="line-through">1.749.000 &#8363</span><br>
+                        <span>1.105,000 &#8363;</span> 
+                    </div>
+                </div>
+                <div class="items-button">
+                    <button class="items-button1">Add to card</button>
+                    <button>Order</button>
+                </div>    
+            </div>
+            <div class="items">
+                <div class="items-img">
+                    <img src="./Photo/pant/sp1-1.png" >
+                </div>
+                <div class="items-content">
+                    <a href="#" class="items-title name-pro">Jogger Pant Street</a>
+                    <div class="items-cost">
+                        <span class="line-through">1.490.000 &#8363</span><br>
+                        <span>889.000 &#8363;</span> 
+                    </div>
+                </div>
+                <div class="items-button">
+                    <button class="items-button1">Add to card</button>
+                    <button>Order</button>
+                </div>    
+            </div>
+            <div class="items hid-1">
+                <div class="items-img">
+                    <img src="./Photo/shoes/sp1-1.png" >
+                </div>
+                <div class="items-content">
+                    <a href="#" class="items-title name-pro">Boot Jack Woflskin</a>
+                    <div class="items-cost">
+                        <span class="line-through">1.990.000 &#8363</span><br>
+                        <span>1.490.000 &#8363;</span> 
+                    </div>
+                </div>
+                <div class="items-button">
+                    <button class="items-button1">Add to card</button>
+                    <button>Order</button>
+                </div>    
+            </div>
+            <div class="items hid-1">
+                <div class="items-img">
+                    <img src="./Photo/accessories/sp1-1.jpg" >
+                </div>
+                <div class="items-content">
+                    <a href="#" class="items-title name-pro">Diamond Dentures</a>
+                    <div class="items-cost">
+                        <span class="line-through">24.900.000 &#8363</span><br>
+                        <span>900.000 &#8363;</span> 
+                    </div>
+                </div>
+                <div class="items-button">
+                    <button class="items-button1">Add to card</button>
+                    <button>Order</button>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <ul>
+            <li class="pag-item">
+                <a href="#"><i></i></a>
+            </li>
+            <li class="pag-item"><a href="#">1</a></li>
+            <li class="pag-item"><a href="#">2</a></li>
+            <li class="pag-item"><a href="#">3</a></li>
+            <li>...</li>
+            <li class="pag-item"><a href="#">5</a></li>
+            <li class="pag-item"><a href="#"><i></i></a></li>
+        </ul>
+    </div>
+<!--Footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="about-us">
+            <h3>About us</h3>
+                <p> Một sản phẩm được xây dựng bởi Nhóm 10 - TKW N.27.</p>
+                <p id="non-ipad"> Danh sách thành viên bao gồm: </p>
+                <ul class="team">
+                    <li>Hà Văn Thời - 201200354</li>
+                    <li>Nguyễn Văn Vũ - 201200421</li>
+                    <li>Nguyễn Sỹ Khánh - 201200181</li>
+                    <li>Nguyễn Quốc Hùng - 201200152</li>
+                    <li>Hoàng Văn Sang - 201200312</li>
+                </ul>
+            </div>
+            <div class="contact_info">
+            <h3>Contact Info</h3>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker"></i><b>&ensp;Address: </b>Số 3 phố Cầu Giấy, P.Láng Thượng, Q.Đống Đa, Hà Nội.</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone"></i><b>&ensp;Hotline: </b>+84 xxx xxx xxx</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope"></i><b>&ensp;Mail: </b>xxx@gmail.com</span>   
+                </li>
+            </ul>
+            </div>
+            <div class="footer_support">
+                <h3>Let Us Help You</h3>
+                <ul class="support-list">   
+                    <li class="support-li"><a href="#4"  target="_blank">Your Account</a></li>
+                    <li class="support-li"><a href="#1"  target="_blank">Your Orders</a></li>
+                    <li class="support-li"><a href="#2"  target="_blank">Shipping Rates</a></li>
+                    <li class="support-li"><a href="#3"  target="_blank">Returns & Replacements</a></li>
+                </ul> 
+            </div>
+            <div class="contact">
+                <h3>Get The App</h3>
+                <div class="com">
+                    <img src="logo/test.png" alt="Logo" style="width: 100px;height: 100px;" >
+                    <div class="com app">
+                        <a rel="noreferrer" href="https://play.google.com/" target="_blank" title="Facebook">
+                            <img src="logo/apk.jpg" alt>
+                        </a><br>
+                        <a rel="noreferrer" href="https://www.apple.com/app-store/" target="_blank" title="Facebook">
+                            <img src="logo/ios.jpg" alt>
+                        </a>
+                    </div>
+                </div>
+                <div class="mxh">
+                    <h3>Contact Us</h3>
+                    <ul class="ul_contact">
+                        <li class="facebook">
+                            <a rel="noreferrer" href="https://www.facebook.com/" target="_blank" title="Facebook">
+                                <img src="logo/style_1/fb.jpg" width="30" alt>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a rel="noreferrer" href="https://www.instagram.com/" target="_blank" title="Instagram">
+                                <img src="logo/style_1/insta.jpg" width="30" alt>
+                            </a>
+                        </li>
+                        <li class="pinterest">
+                            <a rel="noreferrer" href="https://www.pinterest.com/" target="_blank" title="Pinterest">
+                                <img src="logo/style_1/pinterest.jpg" width="30" alt>
+                            </a>
+                        </li>
+                        <li class="tiktok">
+                            <a rel="noreferrer" href="https://www.tiktok.com/vi-VN/" target="_blank" title="Tiktok">
+                                <img src="logo/style_1/tiktok.jpg" width="30" alt>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a rel="noreferrer" href="https://twitter.com/?lang=vi" target="_blank" title="Twitter">
+                                <img src="logo/style_1/twitter.jpg" width="30" alt>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a rel="noreferrer" href="https://www.youtube.com/" target="_blank" title="Youtube">
+                                <img src="logo/style_1/youtube.jpg" width="30" alt>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

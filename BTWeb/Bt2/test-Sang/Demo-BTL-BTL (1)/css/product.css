@@ -1,0 +1,432 @@
+body {
+    background-image: url(https://anhdep123.com/wp-content/uploads/2020/05/hinh-nen-trang-hoa-van-dep.jpg);
+    width: 100%;
+    
+}
+.product {
+    width: 60%;
+    height: 100%;
+    margin: 70px auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container {   
+    display: flex; 
+}
+.product-content {
+    width: 45%;
+    margin: 30px 0 0 30px;
+}
+.container h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+.product-img {
+    margin-top: 50px;
+    width: 30%; 
+}
+.preview-thumbnail.nav-tabs {
+	border: none;
+	margin-top: 15px;
+  border: none;
+}
+.nav-tabs li{
+	width: 18%;
+	margin-right: 2.5%;
+}
+.preview-thumbnail.nav-tabs img {
+	max-width: 100%;
+	display: block;
+  border-radius: 5px;
+}
+.preview-thumbnail.nav-tabs li a {
+	padding: 0;
+	margin: 0;
+	cursor:pointer;
+}
+.preview-thumbnail.nav-tabs li:last-of-type {
+	margin-right: 0;
+}
+.tab-content {
+	overflow: hidden;
+  border-radius: 10px;
+}
+.tab-content img {
+	width: 100%;
+	animation-name: opacity;
+  animation-duration: .3s;
+}
+.name-pro h2 {
+  font-size: 30px;
+}
+.name-pro i {
+    font-size: 12px;
+    margin-left: 20px;
+}
+.cost-pro {
+    margin: 10px 0;
+}
+.cost-pro i {
+    color: rgb(212, 203, 149); 
+}
+.cost-pro p {
+    font-size: 40px;
+    margin-left: 30px;
+}
+.img-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.img-color img {
+    width: 100%;
+}
+.color-pro {
+    margin: 10px;
+}
+.color-pro p span {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.color-pro p {
+    font-size: 14px;
+    color: rgb(61, 61, 61);
+}
+.size-pro {
+    margin: 10px;
+}
+.text-size {
+    font-size: 16px;
+    font-weight: bold;
+}
+.size {
+    margin: 10px 25px
+}
+.a-size {
+    text-decoration: none;
+    border: 1px solid rgb(158, 158, 158);
+    cursor: pointer;
+    padding: 2px 8px;
+    margin: 0 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.size .a-size:active {
+    background-color: rgb(228, 96, 173);
+
+    cursor: pointer;
+    transform: 100s;
+}
+.quantity {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.quantity p {
+    margin-top: 10px;
+}
+.select-quantity input {
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.inf-product {
+    cursor: default;
+    margin: 80px 30px 10px;
+}
+.inf-product::before {
+    content: '';
+    display: block;
+    width: 45%;
+    height: 2.5px;
+    background-image: -webkit-linear-gradient(left, #73D2F6, #08C 22%, #7FC400 36%, #FFD583 48%, #FFB21E 63%, #FF4D4D 76%, #503873);
+    background-image: linear-gradient(to right, #73D2F6, #08C 22%, #7FC400 36%, #FFD583 48%, #FFB21E 63%, #FF4D4D 76%, #503873);
+}
+.form-inf {
+    margin-top: 20px;
+    list-style-type: none;
+}
+.form-inf span{
+    margin-right: 20%;
+    float: right;
+    color: black;
+}
+.form-inf li{
+    color: rgb(147, 147, 147,0.65);
+    padding: 20px 0 20px 10px;
+}
+.form-inf li:hover {
+    color: rgb(147, 147, 147);
+    box-shadow: 0 0 5px rgba(145, 145, 145, 0.338); 
+}
+.description-product{
+    margin: 80px 30px 10px;  
+}
+.description-text {
+    padding-left: 10px;
+}
+.description-product::before {
+    content: '';
+    display: block;
+    width: 45%;
+    height: 2.5px;
+    background-image: -webkit-linear-gradient(left, #73D2F6, #08C 22%, #7FC400 36%, #FFD583 48%, #FFB21E 63%, #FF4D4D 76%, #503873);
+    background-image: linear-gradient(to right, #73D2F6, #08C 22%, #7FC400 36%, #FFD583 48%, #FFB21E 63%, #FF4D4D 76%, #503873);
+}
+
+.button-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.but-custom   {
+    width: 30%;
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+.but-order {
+    background: rgb(241, 101, 155);
+    background: linear-gradient(0deg, rgb(236, 93, 181) 0%, rgb(241, 101, 155) 100%);
+    width: 30%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+.but-order p {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.but-order:before, .but-order:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(241, 101, 155);
+    transition: all 0.3s ease;
+  }
+.but-order:before {
+    height: 0%;
+    width: 2px;
+  }
+.but-order:after {
+    width: 0%;
+    height: 2px;
+  }
+.but-order:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+.but-order:hover:before {
+    height: 100%;
+  }
+.but-order:hover:after {
+    width: 100%;
+  }
+.but-order p:hover{
+     color: rgb(241, 101, 155);
+  }
+.but-order p:before, .but-order p:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(241, 101, 155);
+    transition: all 0.3s ease;
+  }
+.but-order p:before {
+    width: 2px;
+    height: 0%;
+  }
+.but-order p:after {
+    width: 0%;
+    height: 2px;
+  }
+.but-order p:hover:before {
+    height: 100%;
+  }
+.but-order p:hover:after {
+    width: 100%;
+  }
+
+.but-chat {
+    background: rgb(241, 101, 155);
+    background: linear-gradient(0deg, rgb(105, 194, 230) 0%, rgb(51, 179, 211) 100%);
+    width: 30%;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+.but-chat p {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.but-chat:before, .but-chat:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(51, 179, 211);
+    transition: all 0.3s ease;
+  }
+.but-chat:before {
+    height: 0%;
+    width: 2px;
+  }
+.but-chat:after {
+    width: 0%;
+    height: 2px;
+  }
+.but-chat:hover{
+    background: transparent;
+    box-shadow: none;
+  }
+.but-chat:hover:before {
+    height: 100%;
+  }
+.but-chat:hover:after {
+    width: 100%;
+  }
+.but-chat p:hover{
+     color: rgb(51, 179, 211);
+  }
+.but-chat p:before, .but-chat p:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(51, 179, 211);
+    transition: all 0.3s ease;
+  }
+.but-chat p:before {
+    width: 2px;
+    height: 0%;
+  }
+.but-chat p:after {
+    width: 0%;
+    height: 2px;
+  }
+.but-chat p:hover:before {
+    height: 100%;
+  }
+.but-chat p:hover:after {
+    width: 100%;
+  }
+.but-chat i {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .product {
+    width: 90%;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .color-pro, .size-pro, .quantity {
+    display: none;
+  }
+  .cost-pro {
+    display: flex;
+    margin: 0;
+  }
+  .but-order {
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+  }
+  .but-chat {
+    position: fixed;
+    right: 12px;
+    bottom: 400px;
+    width: 40px;
+  }
+  .but-chat p {
+    display: none;
+  }
+  .but-chat i {
+    display: inline-block;
+    padding-right: 3px;
+  }
+  .product-img {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: flex;
+  }
+  .product .product-img .preview-pic.tab-content {
+    width: 70%;
+  }
+  .container .product .preview-pic.tab-content img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .product-img .preview-thumbnail.nav-tabs {
+    width: 30%;
+    margin-top: 0;
+  }
+  .nav-tabs li {
+    width: 42%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  .nav li {
+    margin-bottom: 10px;
+  }
+  .tab-pane {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width:1010px) {
+  .product .container .product-img .preview-pic.tab-content {
+    width: 70%;
+  }
+  .nav-tabs li {
+    width: 55%;
+  }
+  .product .container {
+    margin: 0 10px;
+  }
+  #pic-5 {
+    display: none;
+  }
+  .product-img .preview-thumbnail.nav-tabs {
+    margin-top: 0;
+    width: 30%;
+    justify-content: space-between;
+  }
+  .preview-thumbnail.nav-tabs li:last-of-type {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .list.accesor {
+    display: none;
+  }
+}

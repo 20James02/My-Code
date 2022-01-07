@@ -1,0 +1,21 @@
+{
+  "configurations": [
+      {
+          "name": "Win32",
+          "defines": [
+              "_DEBUG",
+              "UNICODE"
+          ],
+          "compilerPath": "C:\\mingw64\\bin\\g++.exe",
+          "intelliSenseMode": "gcc-x64",
+          "browse": {
+              "path": [
+                  "${workspaceFolder}"
+              ],
+               "limitSymbolsToIncludedHeaders": true,
+              "databaseFilename": ""
+          }
+      }
+  ],
+  "version": 4
+}
